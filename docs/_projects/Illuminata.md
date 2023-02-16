@@ -3,7 +3,7 @@ name: Illuminata
 tools: [C#, Unity]
 description: (In progress) A colab game done in 12 weeks for our University course, it is an endless runner
 #external_url: https://bitbucket.org/wardflame/tales_of_peasants/src/master/
-#image: illuminata.png
+#image: ../assets/projects/illuminata.png
 ---
 
 # 💡Illuminata💡
