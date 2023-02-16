@@ -2,8 +2,8 @@
 layout: default
 ---
 
-<p id="{{ project.id }}-tools" class="card-text">
-        {%- for tool in project.tools -%}
+<p id="{{ page.id }}-tools" class="card-text">
+        {%- for tool in page.tools -%}
         <span class="badge badge-pill text-primary border border-primary ml-1">{{ tool }}</span>
         {%- endfor -%}
       </p>
