@@ -99,6 +99,7 @@ defaults:
 ### Exclude from processing ###
 exclude:
   - README.md
+  - run.bat
   - CONTRIBUTING.md
   - LICENSE
   - "*.log"
