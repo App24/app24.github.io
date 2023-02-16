@@ -4,4 +4,5 @@ tools: [C#]
 description: My attempt at following the Raytracing In One Weekend book series in C#.
 external_url: https://github.com/App24/RaytracingInOneWeekend
 image: ../assets/projects/riow.bmp
+pinned: true
 ---
