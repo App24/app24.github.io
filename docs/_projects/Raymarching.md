@@ -1,7 +1,7 @@
 ---
 name: Ray Marching
 tools: [C#, Unity, Compute Shader]
-description: A colab game done in 12 weeks for our University course, it is an endless runner
+description: A tech demo to learn how to use compute shaders in Unity
 source_code: https://github.com/App24/Raymarching
 image: ../assets/projects/raymarching.png
 pinned: true

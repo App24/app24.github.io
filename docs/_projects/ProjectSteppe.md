@@ -1,12 +1,13 @@
 ---
 name: Project Steppe
 tools: [C#, Unity]
-description: Bundle of tools and editor utilities to help fasten making unity editor tools
+description: A souls-like game worked in a team for 12 weeks for the last trimester of year 3
 source_code: https://github.com/RIZ-STUDIOS/Project-Steppe
 pinned: true
+image: ../assets/projects/project_steppe.png
 ---
 
-# Ric Tools
+# ⚔️Project Steppe⚔️
 
 ---
 
