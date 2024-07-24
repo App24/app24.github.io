@@ -10,4 +10,8 @@ layout: default
 	{%- endfor -%}
   </p>
   {{ content }}
+
+  {%- if page.source_code -%}
+  [Source Code]({{page.source_code}})
+  {%- endif -%}
 </div>
