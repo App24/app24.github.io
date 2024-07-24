@@ -1,7 +1,11 @@
-- name: Adobe Photoshop
-  percentage: 95
-  color: info
-
-- name: Adobe Illustrator
+- name: Source Control
   percentage: 90
+  color: danger
+
+- name: Git
+  percentage: 80
   color: success
+
+- name: Microsoft 365
+  percentage: 75
+  color:

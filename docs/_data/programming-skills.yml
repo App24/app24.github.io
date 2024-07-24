@@ -1,11 +1,11 @@
 - name: C#
-  percentage: 60
+  percentage: 80
   color: success
+
+- name: TypeScript
+  percentage: 60
+  color:
   
 - name: C++
   percentage: 40
   color: danger
-
-- name: TypeScript
-  percentage: 10
-  color:

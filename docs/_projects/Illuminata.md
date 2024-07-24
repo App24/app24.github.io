@@ -2,7 +2,7 @@
 name: Illuminata
 tools: [C#, Unity]
 description: A colab game done in 12 weeks for our University course, it is an endless runner
-#external_url: https://bitbucket.org/wardflame/tales_of_peasants/src/master/
+source_code: https://bitbucket.org/wardflame/titanium_pandas/src/master/
 #image: ../assets/projects/illuminata.png
 ---
 
@@ -10,4 +10,4 @@ description: A colab game done in 12 weeks for our University course, it is an e
 
 ---
 
-[Source Code](https://bitbucket.org/wardflame/titanium_pandas/src/master/)
+<!-- [Source Code](https://bitbucket.org/wardflame/titanium_pandas/src/master/) -->
