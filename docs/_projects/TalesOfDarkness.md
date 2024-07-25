@@ -9,3 +9,5 @@ image: ../assets/projects/talesdarkness.png
 # ⚔️Tales from the Darklands⚔️
 
 ---
+
+In the second half of our first trimester of year 2, we were put into teams again and tasked with making an idle game
