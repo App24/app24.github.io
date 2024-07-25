@@ -8,7 +8,7 @@ weight: 0
 pinned: true
 ---
 
-# 💡Illuminata💡
+# 📷Raymarching📷
 
 ---
 

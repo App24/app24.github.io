@@ -6,15 +6,13 @@ source_code: https://github.com/RIZ-STUDIOS/Project-Steppe
 pinned: true
 image: ../assets/projects/project_steppe.png
 weight: -1
+links:
+    - name: Itch.io
+      url: https://wardflame.itch.io/project-steppe
 ---
 
 # ⚔️Project Steppe⚔️
 
 ---
 
-<img src="../assets/projects/project_steppe.png"/>
-
-
-
-
-[Itch.io](https://wardflame.itch.io/project-steppe)
+![Project Steppe Title Image](../assets/projects/project_steppe.png)
