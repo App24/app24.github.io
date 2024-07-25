@@ -5,14 +5,16 @@ description: A souls-like game worked in a team for 12 weeks for the last trimes
 source_code: https://github.com/RIZ-STUDIOS/Project-Steppe
 pinned: true
 image: ../assets/projects/project_steppe.png
+weight: -1
 ---
 
 # ⚔️Project Steppe⚔️
 
 ---
 
-When developing Illuminata, I started developing some tools for the project, and I knew that I would want to potentially use these in a future project as well. So I extracted the scripts relating to it.<br><br>
-It has some level of abstraction, allowing for adding editor features without having to edit the RicUtils scripts.
+<img src="../assets/projects/project_steppe.png"/>
 
 
-<!-- [Source Code](https://github.com/App24/RicTools) -->
+
+
+[Itch.io](https://wardflame.itch.io/project-steppe)

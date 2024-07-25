@@ -22,7 +22,7 @@ I have 8+ years of self-taught knowledge on many topics and programming language
 {% include about/timeline.html %}
 </div>
 
-## **Resume**
+## **Résumé**
 <div class="row justify-content-center align-items-center col mt-5">
     <iframe src="{{site.data.other.cv_iframe}}" width="580" height="720" allow="autoplay"></iframe>
 </div>

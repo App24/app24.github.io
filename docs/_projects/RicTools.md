@@ -4,6 +4,7 @@ tools: [C#, Unity]
 description: Bundle of tools and editor utilities to help fasten making unity editor tools
 source_code: https://github.com/App24/RicTools
 pinned: true
+weight: 0
 ---
 
 # Ric Tools

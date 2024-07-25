@@ -6,6 +6,7 @@ description: A tech demo to showcase how compute shaders can be used for simulat
 #image: ../assets/projects/boids.png
 source_code: https://github.com/App24/Boids-Flocking
 image: ../assets/projects/boids.png
+weight: 0
 pinned: true
 ---
 
