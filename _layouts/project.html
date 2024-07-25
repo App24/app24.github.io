@@ -11,13 +11,13 @@ layout: default
   </p>
   {%- for link in page.links -%}
   <p>
-    <a href="{{link.url}}">{{link.name}}</a>
+    <a href="{{link.url}}" {%- if site.open_new_tab -%} target="_blank" {%- endif -%}>{{link.name}}</a>
   </p>
   {%- endfor -%}
 
   {%- if page.source_code -%}
   <p>
-    <a href="{{page.source_code}}">Source Code</a>
+    <a href="{{page.source_code}}"  {%- if site.open_new_tab -%} target="_blank" {%- endif -%}>Source Code</a>
   </p>
   {%- endif -%}
   <hr>
