@@ -9,8 +9,6 @@ layout: default
     <span class="badge badge-pill text-primary border border-primary ml-1">{{ tool }}</span>
     {%- endfor -%}
   </p>
-  {{ content }}
-
   {%- for link in page.links -%}
   <p>
     <a href="{{link.url}}">{{link.name}}</a>
@@ -22,4 +20,6 @@ layout: default
     <a href="{{page.source_code}}">Source Code</a>
   </p>
   {%- endif -%}
+  <hr>
+  {{ content }}
 </div>
