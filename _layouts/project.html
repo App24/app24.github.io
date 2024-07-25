@@ -4,14 +4,22 @@ layout: default
 
 
 <div class="col-lg-10 mx-auto mt-5 post">
-	<p id="{{ page.id }}-tools" class="card-text">
-	{%- for tool in page.tools -%}
-	<span class="badge badge-pill text-primary border border-primary ml-1">{{ tool }}</span>
-	{%- endfor -%}
+  <p id="{{ page.id }}-tools" class="card-text">
+    {%- for tool in page.tools -%}
+    <span class="badge badge-pill text-primary border border-primary ml-1">{{ tool }}</span>
+    {%- endfor -%}
   </p>
   {{ content }}
 
+  {%- for link in page.links -%}
+  <p>
+    <a href="{{link.url}}">{{link.name}}</a>
+  </p>
+  {%- endfor -%}
+
   {%- if page.source_code -%}
-  <a href="{{page.source_code}}">Source Code</a>
+  <p>
+    <a href="{{page.source_code}}">Source Code</a>
+  </p>
   {%- endif -%}
 </div>
