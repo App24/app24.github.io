@@ -35,6 +35,8 @@
 
   {%- assign projects = site.projects | sort: 'year_from' -%}
 
+  {%- assign projects = projects | reverse -%}
+
   <!-- Local Projects -->
   {% for project in projects %}
 
