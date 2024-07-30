@@ -72,16 +72,11 @@
 
 {%- if site.organise_projects -%}
 {%- assign projectIndices = projectIndices | reverse -%}
-{%- endif -%}
 
   <!-- Local Projects -->
-  {%- if site.organise_projects -%}
   {% for index in projectIndices %}
 
 	{%- assign project = projects[index] -%}
-  {%- else -%}
-  {% for project in site.projects %}
-  {%- endif -%}
 
     {%- assign project_type  = "local" -%}
     {%- assign project_id    = project.name | slugify -%}
@@ -109,5 +104,36 @@
     {% include projects/project-card.html %}
 
   {% endfor %}
+  {%- else -%}
+  
+  {% for project in site.projects %}
+
+    {%- assign project_type  = "local" -%}
+    {%- assign project_id    = project.name | slugify -%}
+    {%- assign project_img   = project.image -%}
+    {%- assign project_name  = project.name -%}
+    {%- assign project_desc  = project.description -%}
+    {%- assign project_tools = project.tools -%}
+    {%- assign project_year_from = false -%}
+    {%- assign project_year_to = false -%}
+
+    {%- if project.year_from -%}
+      {%- assign project_year_from  = project.year_from -%}
+    {%- endif -%}
+
+    {%- if project.year_to -%}
+      {%- assign project_year_to  = project.year_to -%}
+    {%- endif -%}
+
+    {%- if project.external_url -%}
+      {%- assign project_url = project.external_url -%}
+    {%- else -%}
+      {%- assign project_url = project.url | relative_url -%}
+    {%- endif -%}
+
+    {% include projects/project-card.html %}
+
+  {% endfor %}
+  {%- endif -%}
 
 </div>
