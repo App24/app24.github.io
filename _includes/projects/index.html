@@ -52,7 +52,7 @@
 
   {%- assign newIndex = currentIndex | modulo: itemsPerColumn | times: 3 -%}
 
-  {%- assign temp = currentIndex | divided_by: itemsPerColumn -%}
+  {%- assign temp = currentIndex | divided_by: itemsPerColumn | floor -%}
 
   {%- assign newIndex = newIndex | plus: temp -%}
 
@@ -64,7 +64,7 @@
 
 
 {%- if site.organise_projects -%}
-{%- assign projectIndices = projectIndices | reverse -%}
+{%- assign projects = projects | reverse -%}
 
   <!-- Local Projects -->
   {% for index in projectIndices %}
