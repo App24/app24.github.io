@@ -33,10 +33,7 @@
 
   {% endfor %}
 
-  {%- assign projects = site.projects -%}
-  {%- if site.organise_projects -%}
-  {%- assign projects = projects | sort: 'year_from' -%}
-  {%- endif -%}
+  {%- assign projects = site.projects | sort: 'year_from' -%}
 
 {%- assign projectIndices = "" | split: "" -%}
 {%- assign currentIndex = 0 -%}
@@ -53,17 +50,13 @@
 
   {%- for project in projects -%}
 
-  {%- if site.organise_projects -%}
-    {%- assign newIndex = currentIndex | modulo: itemsPerColumn | times: 3 -%}
+  {%- assign newIndex = currentIndex | modulo: itemsPerColumn | times: 3 -%}
 
-    {%- assign temp = currentIndex | divided_by: itemsPerColumn -%}
+  {%- assign temp = currentIndex | divided_by: itemsPerColumn -%}
 
-    {%- assign newIndex = newIndex | plus: temp -%}
+  {%- assign newIndex = newIndex | plus: temp -%}
 
-    {%- assign projectIndices = projectIndices | push:newIndex -%}
-  {%- else -%}
-    {%- assign projectIndices = projectIndices | push:currentIndex -%}
-  {%- endif -%}
+  {%- assign projectIndices = projectIndices | push:newIndex -%}
 
 	{%- assign currentIndex = currentIndex | plus:1 -%}
 	{%- assign currentColumn = currentColumn | plus: 1 | module: 3 -%}
