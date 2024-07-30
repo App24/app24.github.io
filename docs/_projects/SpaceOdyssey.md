@@ -6,6 +6,7 @@ source_code: https://bitbucket.org/App24/space_odyssey/src/master/
 image: ../assets/projects/spaceodyssey.png
 weight: 0
 pinned: true
+year_from: 2022
 ---
 
 # ⭐Space Odyssey⭐

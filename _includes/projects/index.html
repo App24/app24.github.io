@@ -50,11 +50,15 @@
 
   {%- for project in projects -%}
 	
+	{%- assign newIndex = currentIndex -%}
+
+  {%- if site.organise_projects -%}
 	{%- assign newIndex = currentIndex | modulo: itemsPerColumn | times: 3 -%}
 
 	{%- assign temp = currentIndex | divided_by: itemsPerColumn -%}
 
 	{%- assign newIndex = newIndex | plus: temp -%}
+  {%- endif -%}
 
 	{%- assign projectIndices = projectIndices | push:newIndex -%}
 

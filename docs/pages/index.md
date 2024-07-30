@@ -18,6 +18,16 @@ permalink: /
 		{%- assign project_name  = project.name -%}
 		{%- assign project_desc  = project.description -%}
 		{%- assign project_tools = project.tools -%}
+		{%- assign project_year_from = false -%}
+		{%- assign project_year_to = false -%}
+
+		{%- if project.year_from -%}
+		{%- assign project_year_from  = project.year_from -%}
+		{%- endif -%}
+
+		{%- if project.year_to -%}
+		{%- assign project_year_to  = project.year_to -%}
+		{%- endif -%}
 
 		{%- if project.external_url -%}
 		  {%- assign project_url = project.external_url -%}

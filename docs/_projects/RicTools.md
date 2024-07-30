@@ -5,6 +5,7 @@ description: Bundle of tools and editor utilities to help fasten making unity ed
 source_code: https://github.com/App24/RicTools
 pinned: true
 weight: 0
+year_from: 2023
 ---
 
 # Ric Tools

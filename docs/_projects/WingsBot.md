@@ -3,6 +3,8 @@ name: Wings Bot
 tools: [Typescript, Discord.js, MongoDB]
 description: A discord bot for a server I take part in.
 source_code: https://github.com/App24/Winx-Bot
+year_from: 2020
+year_to: Present
 ---
 
 # Wings Bot

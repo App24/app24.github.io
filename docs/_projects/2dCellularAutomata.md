@@ -4,10 +4,13 @@ tools: [C#, SFML.Net, ImGui.Net]
 description: A Cellular Automata that I made in C#, allows for custom rule sets and comes with presets.
 source_code: https://github.com/App24/2DCellularAutomata
 image: ../assets/projects/2dca.png
+year_from: 2022
 ---
 
 # 2D Cellular Automata
 
 ---
+
+I have always been fascinated with Cellular Automata and how they naturally lead to self-replicating as well as self-sustaining creatures
 
 [ImGui.Net SFML.Net](/projects/imguinetsfml)

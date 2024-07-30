@@ -9,6 +9,7 @@ weight: 0
 links:
     - name: Ray Tracing in One Weekend
       url: https://raytracing.github.io/
+year_from: 2022
 ---
 
 # 💡Raytracing In One Weekend💡

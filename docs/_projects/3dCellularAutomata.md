@@ -6,6 +6,7 @@ source_code: https://github.com/App24/3DCellularAutomata
 image: ../assets/projects/3dca.png
 weight: 0
 pinned: true
+year_from: 2022
 ---
 
 # 3D Cellular Automata
