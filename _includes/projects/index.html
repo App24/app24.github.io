@@ -75,9 +75,13 @@
 {%- endif -%}
 
   <!-- Local Projects -->
+  {%- if site.organise_projects -%}
   {% for index in projectIndices %}
 
 	{%- assign project = projects[index] -%}
+  {%- else -%}
+  {% for project in site.projects %}
+  {%- endif -%}
 
     {%- assign project_type  = "local" -%}
     {%- assign project_id    = project.name | slugify -%}
