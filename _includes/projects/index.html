@@ -35,10 +35,41 @@
 
   {%- assign projects = site.projects | sort: 'year_from' -%}
 
-  {%- assign projects = projects | reverse -%}
+{%- assign projectIndices = "" | split: "" -%}
+{%- assign currentIndex = 0 -%}
+
+{%- assign itemsPerColumn = projects | size -%}
+{%- assign b = itemsPerColumn | modulo: 3 -%}
+{%- assign itemsPerColumn = itemsPerColumn | divided_by: 3 -%}
+
+{%- if b != 0 -%}
+{%- assign itemsPerColumn = itemsPerColumn | plus: 1 -%}
+{%- endif -%}
+
+{%- assign currentColumn = 0 -%}
+
+  {%- for project in projects -%}
+	
+	{%- assign newIndex = currentIndex | modulo: itemsPerColumn | times: 3 -%}
+
+	{%- assign temp = currentIndex | divided_by: itemsPerColumn -%}
+
+	{%- assign newIndex = newIndex | plus: temp -%}
+
+	{%- assign projectIndices = projectIndices | push:newIndex -%}
+
+	{%- assign currentIndex = currentIndex | plus:1 -%}
+	{%- assign currentColumn = currentColumn | plus: 1 | module: 3 -%}
+  {%- endfor -%}
+
+
+{%- assign projectIndices = projectIndices | reverse -%}
+{{projectIndices | array_to_sentence_string}}
 
   <!-- Local Projects -->
-  {% for project in projects %}
+  {% for index in projectIndices %}
+
+	{%- assign project = projects[index] -%}
 
     {%- assign project_type  = "local" -%}
     {%- assign project_id    = project.name | slugify -%}
