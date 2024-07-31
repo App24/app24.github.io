@@ -2,7 +2,7 @@
 
 {% for tool in project_tools %}
   {% assign toolString = tool | slugify %}
-  {% assign toolsString = toolsString | push: toolsString %}
+  {% assign toolsString = toolsString | push: toolString %}
 {% endfor %}
 
 <div class="wow animated fadeIn" data-wow-delay=".15s" class="{{toolsString | join: ' '}}">
