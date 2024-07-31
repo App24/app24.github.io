@@ -33,13 +33,14 @@ remote_projects:
   .badge-pill.selected {
     background-color: #243d5e;
   }
-  .badge-pill.tool{
+
+  .badge-pill.tool {
     user-select: none;
     cursor: pointer;
   }
 </style>
 
-{% assign languages = "C#,C++,Unity" | split:"," %}
+{% assign languages = "C#,C++,Unity,Unreal" | split:"," %}
 
 <script>
   var projects = [
@@ -58,7 +59,6 @@ remote_projects:
       const tools = element.dataset.tools.split(" ");
       projects.push({ element, tools });
     }
-    console.log(elements);
     foundProjets = true;
   }
 
@@ -79,6 +79,9 @@ remote_projects:
       for (let index = 0; index < tools.length; index++) {
         if (tools.includes(tool) || (currentSelectedTool && currentSelectedTool == e)) {
           element.style.display = "block";
+          element.classList.remove("animated");
+          element.style.visibility = "visible";
+          element.style.animation_name = "fadeIn";
           correctTool = true;
           return;
         }

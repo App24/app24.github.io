@@ -20,6 +20,12 @@ layout: default
     <a href="{{page.source_code}}"  {%- if site.open_new_tab -%} target="_blank" {%- endif -%}>Source Code</a>
   </p>
   {%- endif -%}
+
+  {%- if page.build_url -%}
+  <p>
+    <a href="{{page.build_url}}"  {%- if site.open_new_tab -%} target="_blank" {%- endif -%}>Build</a>
+  </p>
+  {%- endif -%}
   <hr>
   {{ content }}
 </div>

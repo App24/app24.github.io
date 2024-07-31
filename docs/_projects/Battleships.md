@@ -5,6 +5,7 @@ description: A C++ console game replicating the Battleships board game for an Un
 source_code: https://github.com/App24/Battleships
 image: ../assets/projects/battleships.png
 year_from: 2022
+build: https://github.com/App24/Battleships/releases/tag/v1.0.0
 ---
 
 # 🚢Battleships🚢
