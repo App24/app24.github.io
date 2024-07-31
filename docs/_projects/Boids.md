@@ -7,6 +7,7 @@ image: ../assets/projects/boids.png
 weight: -1
 pinned: true
 year_from: 2024
+build_url: https://github.com/App24/Boids-Flocking/releases
 ---
 
 # 🐟Boids🐟

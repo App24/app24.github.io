@@ -5,6 +5,7 @@ description: A colab game done in 12 weeks for our University course, it is an e
 source_code: https://bitbucket.org/wardflame/illuminata/src/master/
 image: ../assets/projects/illuminata.png
 year_from: 2023
+build_url: https://bitbucket.org/wardflame/illuminata/downloads/
 ---
 
 # 💡Illuminata💡
