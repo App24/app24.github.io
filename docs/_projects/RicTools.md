@@ -6,7 +6,7 @@ source_code: https://github.com/App24/RicTools
 pinned: true
 weight: 0
 year_from: 2023
-build: https://github.com/App24/RicTools/releases/tag/2.0.1
+build_url: https://github.com/App24/RicTools/releases
 ---
 
 # Ric Tools

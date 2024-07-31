@@ -5,7 +5,7 @@ description: A text-based adventure game I made for my University course.
 source_code: https://github.com/App24/Artefact
 image: ../assets/projects/artefact.png
 year_from: 2021
-build: https://github.com/App24/Artefact/releases/tag/v1.0.0
+build_url: https://github.com/App24/Artefact/releases/tag/v1.0.0
 ---
 
 # Artefact
