@@ -3,9 +3,9 @@ layout: default
 title: Projects
 permalink: /projects/
 weight: 1
-remote_projects: 
-  - git-for-wizards
-  - arduino-visitor-counter
+remote_projects:
+- git-for-wizards
+- arduino-visitor-counter
 ---
 
 <!-- <div class="input-group mt-5 px-3">
@@ -28,4 +28,83 @@ remote_projects:
         json: '{{ '/project_search.json' | relative_url }}'
       })
 </script> -->
+
+<style>
+  .badge-pill.selected {
+    background-color: #243d5e;
+  }
+  .badge-pill.tool{
+    user-select: none;
+    cursor: pointer;
+  }
+</style>
+
+{% assign languages = "C#,C++,Unity" | split:"," %}
+
+<script>
+  var projects = [
+
+  ];
+
+  var foundProjets = false;
+
+  var currentSelectedTool;
+
+  function loadAllProjects() {
+    var elements = document.getElementsByClassName("project-card");
+    for (let index = 0; index < elements.length; index++) {
+      const element = elements[index];
+      if (!element.dataset || !element.dataset.tools) return;
+      const tools = element.dataset.tools.split(" ");
+      projects.push({ element, tools });
+    }
+    console.log(elements);
+    foundProjets = true;
+  }
+
+  function sortPerTool(e) {
+    if (!foundProjets) {
+      loadAllProjects();
+    }
+    if (currentSelectedTool) {
+      currentSelectedTool.classList.remove("selected");
+    }
+    const tool = e.dataset.tool.toLowerCase();
+
+    var correctTool = false;
+
+    projects.forEach(project => {
+      const tools = project.tools;
+      const element = project.element;
+      for (let index = 0; index < tools.length; index++) {
+        if (tools.includes(tool) || (currentSelectedTool && currentSelectedTool == e)) {
+          element.style.display = "block";
+          correctTool = true;
+          return;
+        }
+      }
+      element.style.display = "none";
+    });
+
+    if (correctTool) {
+      if (currentSelectedTool && currentSelectedTool == e) {
+        currentSelectedTool.classList.remove("selected");
+        currentSelectedTool = undefined;
+      } else {
+        currentSelectedTool = e;
+        currentSelectedTool.classList.add("selected");
+      }
+    }
+  }
+</script>
+
+<div class="ml-3 mt-5" style="margin-bottom:-1em;">
+  <p id="tools" class="card-text">
+    {%- for tool in languages -%}
+    <span class="badge badge-pill text-primary border border-primary ml-1 tool" data-tool="{{tool}}"
+      onclick="sortPerTool(this)">{{ tool }}</span>
+    {%- endfor -%}
+  </p>
+</div>
+
 {% include projects/index.html %}

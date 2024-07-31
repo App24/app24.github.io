@@ -49,7 +49,7 @@ author:
 ### Posts ###
 permalink: /blog/:title
 
-organise_projects: true
+organise_projects: false
 
 ### Collections ###
 collections:
