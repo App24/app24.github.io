@@ -5,7 +5,7 @@
   {% assign toolsString = toolsString | push: toolString %}
 {% endfor %}
 
-<div class="wow animated fadeIn project-card {{ project_id }} {{toolsString | join: ' '}}" data-wow-delay=".15s">
+<div class="wow animated fadeIn project-card" data-id="{{ project_id }}" data-tools="{{toolsString | join: ' '}}" data-wow-delay=".15s">
   <a href="{{ project_url }}" class="project card text-themed">
     {%- if project_img -%}
     <img id="{{ project_id }}-img" class="card-img-top" src="{{ project_img }}" alt="{{ project_name }}" />
