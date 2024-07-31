@@ -1,4 +1,11 @@
-<div class="wow animated fadeIn" data-wow-delay=".15s">
+{% assign toolsString = "" | split: "" %}
+
+{% for tool in project_tools %}
+  {% assign toolString = tool | slugify %}
+  {% assign toolsString = toolsString | push: toolsString %}
+{% endfor %}
+
+<div class="wow animated fadeIn" data-wow-delay=".15s" class="{{toolsString | join: ' '}}">
   <a href="{{ project_url }}" class="project card text-themed">
     {%- if project_img -%}
     <img id="{{ project_id }}-img" class="card-img-top" src="{{ project_img }}" alt="{{ project_name }}" />
