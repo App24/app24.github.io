@@ -1,7 +1,7 @@
 {% assign toolsString = "" | split: "" %}
 
 {% for tool in project_tools %}
-  {% assign toolString = tool | slugify %}
+  {% assign toolString = tool | replace: " ", "-" %}
   {% assign toolsString = toolsString | push: toolString %}
 {% endfor %}
 
