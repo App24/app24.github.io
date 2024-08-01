@@ -10,3 +10,5 @@ year_from: 2021
 # 🧑‍🚀Asteroids🧑‍🚀
 
 ---
+
+As a way of exploring new ways of coding, I settled on making a clone of the arcade game Asteroids.

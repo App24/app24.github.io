@@ -5,7 +5,7 @@ description: This is a small game I made a few years back, when I was first lear
 source_code: https://github.com/App24/AppleCatcher
 image: ../assets/projects/applecatcher.png
 year_from: 2019
-build_url: https://github.com/App24/AppleCatcher/releases/tag/v1.0.0
+build_url: https://github.com/App24/AppleCatcher/releases
 ---
 
 # 🍎AppleCatcher🍎

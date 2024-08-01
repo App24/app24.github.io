@@ -11,4 +11,4 @@ year_from: 2022
 
 ---
 
-In the second half of our first trimester of year 2, we were put into teams again and tasked with making an idle game
+In the second half of our first trimester of year 2, we were put into teams again and tasked with making an idle game.
