@@ -3,7 +3,7 @@
   color: success
 
 - name: TypeScript
-  percentage: 60
+  percentage: 70
   color:
   
 - name: C++
