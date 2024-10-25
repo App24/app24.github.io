@@ -6,6 +6,10 @@
   percentage: 70
   color:
   
+- name: Python
+  percentage: 45
+  color: info
+  
 - name: C++
-  percentage: 40
+  percentage: 30
   color: danger
